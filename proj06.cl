@@ -20,11 +20,11 @@ Regression(	IN global const float *dX,
 
 	float x = dX[gid];
 	float y = dY[gid];
-	dSumx4[ gid ]  = ??????;
-	dSumx3[ gid ]  = ??????;
-	dSumx2[ gid ]  = ??????;
-	dSumx[ gid ]   = ??????;
-	dSumx2y[ gid ] = ??????;
-	dSumxy[ gid ]  = ??????;
-	dSumy[ gid ]   = ??????;
+	dSumx4[ gid ]  = x * x * x * x;
+	dSumx3[ gid ]  = x * x * x;
+	dSumx2[ gid ]  = x * x;
+	dSumx[ gid ]   = x;
+	dSumx2y[ gid ] = x * x * y;
+	dSumxy[ gid ]  = x * y;
+	dSumy[ gid ]   = y;
 }
